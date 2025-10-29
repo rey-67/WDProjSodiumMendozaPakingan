@@ -2,36 +2,35 @@
 
 ## Website Title
 
-**Survive to Thrive**
+**SurviveBlocks**
 
-## Second Title
+## Header
 
-**Survival Master • Build • Conquer**
+<img width="1920" height="1080" alt="WEBSITE PROJECT HEADER" src="https://github.com/user-attachments/assets/176137f1-40ce-4e4d-a48a-f9fbe0555c3d" />
+
 
 ## Website Logo
 
-**A Golden Minecraft Heart 
+<img width="500" height="500" alt="WEBSITE PROJECT LOGO" src="https://github.com/user-attachments/assets/387160d8-37da-402d-abbf-f0ae2875fe20" />
+
 
 ## Description
 
-SurviveCraft is a beginner-friendly website that helps players learn how to survive, build, and explore in Minecraft. It covers crafting, mining, farming, redstone, and boss fights. The goal is to help players go from their first night to beating the Ender Dragon with clear, simple guides and visuals.
+SurviveBlocks is a beginner-friendly website that helps players learn how to survive, build, and explore in Minecraft. It covers crafting, mining, farming, boss fights, and pro mechanics. The goal is to help players go from their first night to beating the Ender Dragon with clear, simple guides and visuals.
 
 ## Website Pages
 
 1. **Home** – Introduction to Minecraft and links to all main sections.
 2. **Survival** – Crafting, mining, farming, and general gameplay tips.
-3. **Redstone Contraptions** – Basic redstone tutorials and sample builds.
-4. **Bosses & Challenges** – How to fight the Wither, Ender Dragon, Warden, and more.
-5. **Areas & Dimensions** – Guides for Overworld, Nether, and End biomes and structures.
-
----
+3. **Bosses & Challenges** – How to fight the Wither, Ender Dragon, Warden, and more.
+4. **Areas & Dimensions** – Guides for Overworld, Nether, and End biomes and structures.
+5. **Pro Mechanics** – Popular and easy "Pro Mechanics" that you should learn/know.
 
 ## JavaScript Feature
 
 * **Day and Night Mode:** A toggle switch that changes the theme between Day (Overworld) and Night (Nether).
-* **Optional (if time allows):** A simple crafting table simulator that shows what item is made based on placed materials.
+* **Optional (if we feel motivated):** A simple crafting table simulator that shows what item is made based on placed materials.
 
----
 
 ## Simple Wireframe (Layout Overview)
 
