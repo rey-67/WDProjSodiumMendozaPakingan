@@ -1,17 +1,12 @@
-# Guide for Survival Minecraft
+# PROJECT PROPOSAL BY NA23 REY MENDOZA AND NA26 JUDAH PAKINGAN
 
 ## Website Title
 
 **SurviveBlocks**
 
-## Header
-
-<img width="1920" height="1080" alt="WEBSITE PROJECT HEADER" src="https://github.com/user-attachments/assets/176137f1-40ce-4e4d-a48a-f9fbe0555c3d" />
-
-
 ## Website Logo
 
-<img width="500" height="500" alt="WEBSITE PROJECT LOGO" src="https://github.com/user-attachments/assets/387160d8-37da-402d-abbf-f0ae2875fe20" />
+<img width="500" height="500" alt="WEBSITE PROJECT LOGO" src="https://github.com/user-attachments/assets/9825473e-2018-4469-9f21-6bd1609f0e4b" />
 
 
 ## Description
@@ -28,23 +23,23 @@ SurviveBlocks is a beginner-friendly website that helps players learn how to sur
 
 ## JavaScript Feature
 
-* **Day and Night Mode:** A toggle switch that changes the theme between Day (Overworld) and Night (Nether).
+* **Day and Night Mode:** A toggle switch (which is the logo) that changes the theme between Dirt (Overworld) and Netherack (Nether).
 * **Optional (if we feel motivated):** A simple crafting table simulator that shows what item is made based on placed materials.
 
 
 ## Simple Wireframe (Layout Overview)
 
-```
-[Header: Logo | Home | Survival | Redstone | Bosses | Areas | Theme Toggle]
----------------------------------------------------
-| Page Title / Section Header                     |
-| Main Content (Text, Images, Guides)              |
-| Navigation links between pages                   |
----------------------------------------------------
-[Footer: © 2025 SurviveCraft | Social Links]
-```
+<img width="1920" height="1080" alt="WEBSITE PROJECT WIREFRAME P1" src="https://github.com/user-attachments/assets/d99d61cb-f580-4236-8e43-56e598852a6b" />
+<img width="1276" height="717" alt="WEBSITE PROJECT WIREFRAME P1 SPECIAL" src="https://github.com/user-attachments/assets/ce9783fc-2051-4c23-b8ee-995175ee8b43" />
+<img width="1920" height="1080" alt="WEBSITE PROJECT WIREFRAME P2" src="https://github.com/user-attachments/assets/29110f7e-911a-4e82-ae06-71b94ab873f8" />
+<img width="1920" height="1080" alt="WEBSITE PROJECT WIREFRAME P3" src="https://github.com/user-attachments/assets/4f1a0c9e-b664-4ba2-bda5-4e1d96679193" />
+<img width="1920" height="1080" alt="WEBSITE PROJECT WIREFRAME P4" src="https://github.com/user-attachments/assets/ebb43c98-d8f4-431f-8455-2e8f54180199" />
+<img width="1920" height="1080" alt="WEBSITE PROJECT WIREFRAME P5" src="https://github.com/user-attachments/assets/170cfa82-fd1a-4bf4-b8e6-50fcc797e32a" />
+<img width="1920" height="1080" alt="WEBSITE PROJECT WIREFRAME P6" src="https://github.com/user-attachments/assets/8465ad1c-25f7-4979-955f-3454665f205d" />
+<img width="1920" height="1080" alt="WEBSITE PROJECT WIREFRAME P7" src="https://github.com/user-attachments/assets/795b2fb5-e872-4a9c-b45a-9677a843d9fb" />
+
 
 ## Navigation & Footer
 
-* Navigation bar looks like a Minecraft hotbar, visible on every page.
-* Footer includes copyright notice and social media icons
+* Navigation bar looks like a Minecraft Grass Block, visible on every page.
+* Footer includes sources and social media icons
