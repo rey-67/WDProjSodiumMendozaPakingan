@@ -121,7 +121,6 @@
       color: white;
       font-family: 'Press Start 2P', cursive, sans-serif;
       font-size: 16px;
-      position: relative;
     }
 
     footer div {
@@ -177,7 +176,6 @@
     #bgBtn:active img {
       filter: drop-shadow(0 0 10px white) brightness(1.2);
     }
-
   </style>
 </head>
 
@@ -188,11 +186,11 @@
   </button>
 
   <nav>
-    <a href="#" class="active">HOME</a>
-    <a href="#">SURVIVAL</a>
-    <a href="#">BOSSES</a>
-    <a href="#">DIMENSIONS</a>
-    <a href="#">MECHANICS</a>
+    <a href="home.html" class="active">HOME</a>
+    <a href="survival.html">SURVIVAL</a>
+    <a href="bosses.html">BOSSES</a>
+    <a href="dimensions.html">DIMENSIONS</a>
+    <a href="mechanics.html">MECHANICS</a>
   </nav>
 
   <div class="banner dark-card">
@@ -245,7 +243,6 @@
   <script>
     const originalBG = "url('https://i.redd.it/we-transformed-the-end-into-an-overworld-village-in-v0-ef77hbv69ka91.png?width=1920&format=png&auto=webp&s=75f6fb56c30c69c9341b9c981a1e84c6ea087b1e')";
     const newBG = "url('https://cdn.modrinth.com/data/9YabX8Vy/images/10f9e3c98388fd91186239010e2dfaf61950f484.png')";
-
     let toggled = false;
 
     const btnImg = document.querySelector('#bgBtn img');
@@ -269,6 +266,5 @@
       updateGlow();
     });
   </script>
-
 </body>
 </html>
