@@ -10,7 +10,8 @@
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: url('https://i.redd.it/we-transformed-the-end-into-an-overworld-village-in-v0-ef77hbv69ka91.png?width=1920&format=png&auto=webp&s=75f6fb56c30c69c9341b9c981a1e84c6ea087b1e') no-repeat center center fixed;
+      background: url('https://i.redd.it/we-transformed-the-end-into-an-overworld-village-in-v0-ef77hbv69ka91.png?width=1920&format=png&auto=webp&s=75f6fb56c30c69c9341b9c981a1e84c6ea087b1e') 
+      no-repeat center center fixed;
       background-size: cover;
       color: white;
     }
@@ -49,6 +50,11 @@
     nav a:hover {
       filter: brightness(1.3);
       transform: translateY(-3px);
+    }
+
+    nav a.active {
+      border: 2px solid white;
+      color: yellow;
     }
 
     .banner {
@@ -115,6 +121,7 @@
       color: white;
       font-family: 'Press Start 2P', cursive, sans-serif;
       font-size: 16px;
+      position: relative;
     }
 
     footer div {
@@ -128,24 +135,65 @@
       transform: translateY(-3px);
       background-color: rgba(0, 0, 0, 0.35);
     }
+
+    .contact-wrapper,
+    .source-wrapper {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .contact-popup,
+    .source-popup {
+      display: none;
+      position: absolute;
+      bottom: 60px;
+      left: -20px;
+      width: 320px;
+      padding: 25px;
+      background: rgba(0, 0, 0, 0.85);
+      border: 2px solid white;
+      border-radius: 14px;
+      color: white;
+      font-size: 18px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 9999;
+    }
+
+    .contact-wrapper:hover .contact-popup,
+    .source-wrapper:hover .source-popup {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #bgBtn img {
+      transition: 0.25s ease;
+    }
+
+    #bgBtn:hover img,
+    #bgBtn:active img {
+      filter: drop-shadow(0 0 10px white) brightness(1.2);
+    }
+
   </style>
 </head>
+
 <body>
+
+  <button id="bgBtn" style="position: fixed; top: 15px; left: 15px; z-index: 9999; padding: 0; border: none; background: none; cursor: pointer;">
+    <img src="https://i.postimg.cc/V67stJQf/button.png" style="width: 100px; image-rendering: pixelated;">
+  </button>
 
   <nav>
     <a href="#">HOME</a>
-    <a href="#">SURVIVAL</a>
+    <a href="#" class="active">SURVIVAL</a>
     <a href="#">BOSSES</a>
     <a href="#">DIMENSIONS</a>
     <a href="#">MECHANICS</a>
   </nav>
-
-  <!-- NEW BACKGROUND TOGGLE BUTTON -->
-  <button id="bgToggle" 
-    style="position:absolute; top:20px; left:20px; background:none; border:none; cursor:pointer;">
-   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL...snip..." 
-     style="width:80px; image-rendering:pixelated;">
-  </button>
 
   <div class="banner dark-card">
     <img src="https://res.cloudinary.com/zenbusiness/q_auto,w_1050/v1670445040/logaster/logaster-2020-06-image14-3.png">
@@ -159,30 +207,66 @@
 
     <div class="right-info">
       <div class="video-box dark-card">
-        https://www.youtube.com/watch?v=-1Sy6iz43vg
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/-1Sy6iz43vg" frameborder="0" allowfullscreen></iframe>
       </div>
+
       <div class="video-box dark-card">
-        https://www.youtube.com/watch?v=vcRoRl-CQys
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/vcRoRl-CQys" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
   </div>
 
   <footer class="dark-card">
-    <div>CONTACT INFO</div>
+
+    <div class="contact-wrapper">
+      CONTACT INFO
+      <div class="contact-popup">
+        <strong>Instagram:</strong> @REYJUDAH<br>
+        <strong>X:</strong> @REYJUDAH<br>
+        <strong>Facebook:</strong> REYJUDAH<br>
+        <strong>Phone:</strong> 0967 607 6767<br>
+        <strong>Email:</strong> REYJUDAH@gmail.com
+      </div>
+    </div>
+
     <div>COPYRIGHT (C) RJ</div>
-    <div>SOURCES</div>
+
+    <div class="source-wrapper">
+      SOURCES
+      <div class="source-popup">
+        <strong>Video Sources:</strong><br>
+        https://www.youtube.com/watch?v=-1Sy6iz43vg<br>
+        https://www.youtube.com/watch?v=vcRoRl-CQys
+      </div>
+    </div>
+
   </footer>
 
-  <!-- Background Toggle Script -->
   <script>
-    const toggleBtn = document.getElementById('bgToggle');
+    const originalBG = "url('https://i.redd.it/we-transformed-the-end-into-an-overworld-village-in-v0-ef77hbv69ka91.png?width=1920&format=png&auto=webp&s=75f6fb56c30c69c9341b9c981a1e84c6ea087b1e')";
+    const newBG = "url('https://cdn.modrinth.com/data/9YabX8Vy/images/10f9e3c98388fd91186239010e2dfaf61950f484.png')";
+
     let toggled = false;
 
-    toggleBtn.addEventListener('click', () => {
-      document.body.style.backgroundImage = toggled
-        ? "url('https://i.redd.it/we-transformed-the-end-into-an-overworld-village-in-v0-ef77hbv69ka91.png?width=1920&format=png&auto=webp&s=75f6fb56c30c69c9341b9c981a1e84c6ea087b1e')"
-        : "url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA8AAAAIcCAIAAAC2...snip...')"
+    const btnImg = document.querySelector('#bgBtn img');
+
+    function updateGlow() {
+      btnImg.style.filter = toggled
+        ? 'drop-shadow(0 0 10px lime) brightness(1.1)'
+        : 'drop-shadow(0 0 10px red) brightness(1.1)';
+    }
+
+    updateGlow();
+
+    document.getElementById('bgBtn').addEventListener('click', function () {
       toggled = !toggled;
+
+      document.body.style.background =
+        `${toggled ? newBG : originalBG} no-repeat center center fixed`;
+
+      document.body.style.backgroundSize = "cover";
+
+      updateGlow();
     });
   </script>
 
