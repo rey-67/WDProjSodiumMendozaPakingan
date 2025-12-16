@@ -1,14 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SurviveBlocks - Survival</title>
-
+  <title>SurviveBlocks - Surviva</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: url('https://i.redd.it/we-transformed-the-end-into-an-overworld-village-in-v0-ef77hbv69ka91.png?width=1920&format=png&auto=webp&s=75f6fb56c30c69c9341b9c981a1e84c6ea087b1e') 
-      no-repeat center center fixed;
+      background: url('https://i.redd.it/we-transformed-the-end-into-an-overworld-village-in-v0-ef77hbv69ka91.png?width=1920&format=png&auto=webp&s=75f6fb56c30c69c9341b9c981a1e84c6ea087b1e')
+        no-repeat center center fixed;
       background-size: cover;
       color: white;
     }
@@ -30,7 +32,6 @@
       justify-content: center;
       gap: 60px;
       padding: 20px 0;
-      margin: 0;
     }
 
     nav a {
@@ -62,12 +63,6 @@
 
     .banner img {
       width: 300px;
-      transition: 0.3s;
-    }
-
-    .banner img:hover {
-      filter: brightness(1.2);
-      transform: translateY(-3px);
     }
 
     .content-wrapper {
@@ -83,7 +78,6 @@
       font-size: 22px;
       line-height: 1.6;
       font-weight: bold;
-      color: white;
     }
 
     .right-info {
@@ -94,19 +88,21 @@
     }
 
     .video-box {
-      font-family: 'Press Start 2P', cursive, sans-serif;
-      text-align: center;
-      font-size: 16px;
-      padding: 25px;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.55);
+      padding: 20px;
       border-radius: 14px;
-      transition: 0.3s;
     }
 
-    .video-box:hover {
-      filter: brightness(1.25);
-      transform: translateY(-3px);
+    .video-wrapper {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
     }
 
     footer {
@@ -115,15 +111,14 @@
       align-items: center;
       padding: 25px;
       margin-top: 40px;
-      color: white;
       font-family: 'Press Start 2P', cursive, sans-serif;
       font-size: 16px;
     }
 
     footer div {
-      transition: 0.3s;
       padding: 15px;
       border-radius: 10px;
+      transition: 0.3s;
     }
 
     footer div:hover {
@@ -135,7 +130,6 @@
     .contact-wrapper,
     .source-wrapper {
       position: relative;
-      display: inline-block;
       cursor: pointer;
     }
 
@@ -150,19 +144,13 @@
       background: rgba(0, 0, 0, 0.85);
       border: 2px solid white;
       border-radius: 14px;
-      color: white;
       font-size: 18px;
-      opacity: 0;
-      transform: translateY(10px);
-      transition: opacity 0.3s ease, transform 0.3s ease;
       z-index: 9999;
     }
 
     .contact-wrapper:hover .contact-popup,
     .source-wrapper:hover .source-popup {
       display: block;
-      opacity: 1;
-      transform: translateY(0);
     }
 
     #bgBtn img {
@@ -178,26 +166,32 @@
 
 <body>
 
-  <button id="bgBtn" style="position: fixed; top: 15px; left: 15px; z-index: 9999; padding: 0; border: none; background: none; cursor: pointer;">
-    <img src="https://i.postimg.cc/V67stJQf/button.png" style="width: 100px; image-rendering: pixelated;">
-  </button>
+<!-- BACKGROUND TOGGLE BUTTON -->
+<button id="bgBtn"
+  style="position: fixed; top: 15px; left: 15px; z-index: 9999;
+         padding: 0; border: none; background: none; cursor: pointer;">
+  <img src="https://i.postimg.cc/V67stJQf/button.png"
+       style="width: 100px; image-rendering: pixelated;">
+</button>
 
-  <nav>
-    <a href="home.html">HOME</a>
-    <a href="survival.html" class="active">SURVIVAL</a>
-    <a href="bosses.html">BOSSES</a>
-    <a href="dimensions.html">DIMENSIONS</a>
-    <a href="mechanics.html">MECHANICS</a>
-  </nav>
+<nav>
+  <a href="home.html">HOME</a>
+  <a href="survival.html" class="active">SURVIVAL</a>
+  <a href="bosses.html">BOSSES</a>
+  <a href="dimensions.html">DIMENSIONS</a>
+  <a href="mechanics.html">MECHANICS</a>
+</nav>
 
-  <div class="banner dark-card">
-    <img src="https://res.cloudinary.com/zenbusiness/q_auto,w_1050/v1670445040/logaster/logaster-2020-06-image14-3.png">
-    <h1>Surviveblocks: Surviving Minecraft</h1>
-  </div>
+<div class="banner dark-card">
+  <img src="https://res.cloudinary.com/zenbusiness/q_auto,w_1050/v1670445040/logaster/logaster-2020-06-image14-3.png">
+  <h1>SurviveBlocks: Survival</h1>
+</div>
 
-  <div class="content-wrapper">
-    <div class="left-info dark-card">
-      <h2>Game Progression</h2>
+<div class="content-wrapper">
+
+  <div class="left-info dark-card">
+
+    <h2>Game Progression</h2>
 
 <p>
 This guide focuses on the early part of the game, but it helps to understand how Minecraft progresses overall. Progression in Minecraft is not very linear. It mostly depends on gathering different materials that unlock new tools and abilities. For example, a wooden pickaxe lets you mine stone, which lets you make stone tools and a furnace. With a furnace, you can smelt iron. An iron pickaxe lets you get diamonds, and a diamond pickaxe can mine almost anything.
@@ -299,70 +293,75 @@ Avoid raw chicken, rotten flesh, spider eyes, and pufferfish. They cause poisoni
 Wood is your most basic and important resource. Break logs by hand and collect at least six to eight to start. You can make planks, sticks, tools, and many items from wood. Each tree type looks different, but all logs work the same.
 </p>
 
+  </div>
+
+  <div class="right-info">
+
+    <div class="video-box dark-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/-1Sy6iz43vg" allowfullscreen></iframe>
+      </div>
     </div>
 
-    <div class="right-info">
-      <div class="video-box dark-card">
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/-1Sy6iz43vg" frameborder="0" allowfullscreen></iframe>
+    <div class="video-box dark-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/vcRoRl-CQys" allowfullscreen></iframe>
       </div>
+    </div>
 
-      <div class="video-box dark-card">
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/vcRoRl-CQys" frameborder="0" allowfullscreen></iframe>
-      </div>
+  </div>
+</div>
+
+<footer class="dark-card">
+
+  <div class="contact-wrapper">
+    CONTACT INFO
+    <div class="contact-popup">
+      <strong>Instagram:</strong> @REYJUDAH<br>
+      <strong>X:</strong> @REYJUDAH<br>
+      <strong>Facebook:</strong> REYJUDAH<br>
+      <strong>Phone:</strong> 0967 607 6767<br>
+      <strong>Email:</strong> REYJUDAH@gmail.com
     </div>
   </div>
 
-  <footer class="dark-card">
+  <div>COPYRIGHT (C) RJ</div>
 
-    <div class="contact-wrapper">
-      CONTACT INFO
-      <div class="contact-popup">
-        <strong>Instagram:</strong> @REYJUDAH<br>
-        <strong>X:</strong> @REYJUDAH<br>
-        <strong>Facebook:</strong> REYJUDAH<br>
-        <strong>Phone:</strong> 0967 607 6767<br>
-        <strong>Email:</strong> REYJUDAH@gmail.com
-      </div>
+  <div class="source-wrapper">
+    SOURCES
+    <div class="source-popup">
+      https://www.youtube.com/watch?v=-1Sy6iz43vg<br>
+      https://www.youtube.com/watch?v=vcRoRl-CQys
     </div>
+  </div>
 
-    <div>COPYRIGHT (C) RJ</div>
+</footer>
 
-    <div class="source-wrapper">
-      SOURCES
-      <div class="source-popup">
-        <strong>Video Sources:</strong><br>
-        https://www.youtube.com/watch?v=-1Sy6iz43vg<br>
-        https://www.youtube.com/watch?v=vcRoRl-CQys
-      </div>
-    </div>
+<script>
+  const originalBG =
+    "url('https://i.redd.it/we-transformed-the-end-into-an-overworld-village-in-v0-ef77hbv69ka91.png?width=1920&format=png&auto=webp&s=75f6fb56c30c69c9341b9c981a1e84c6ea087b1e')";
+  const newBG =
+    "url('https://cdn.modrinth.com/data/9YabX8Vy/images/10f9e3c98388fd91186239010e2dfaf61950f484.png')";
 
-  </footer>
+  let toggled = false;
+  const btnImg = document.querySelector('#bgBtn img');
 
-  <script>
-    const originalBG = "url('https://i.redd.it/we-transformed-the-end-into-an-overworld-village-in-v0-ef77hbv69ka91.png?width=1920&format=png&auto=webp&s=75f6fb56c30c69c9341b9c981a1e84c6ea087b1e')";
-    const newBG = "url('https://cdn.modrinth.com/data/9YabX8Vy/images/10f9e3c98388fd91186239010e2dfaf61950f484.png')";
-    let toggled = false;
+  function updateGlow() {
+    btnImg.style.filter = toggled
+      ? 'drop-shadow(0 0 10px lime) brightness(1.1)'
+      : 'drop-shadow(0 0 10px red) brightness(1.1)';
+  }
 
-    const btnImg = document.querySelector('#bgBtn img');
+  updateGlow();
 
-    function updateGlow() {
-      btnImg.style.filter = toggled
-        ? 'drop-shadow(0 0 10px lime) brightness(1.1)'
-        : 'drop-shadow(0 0 10px red) brightness(1.1)';
-    }
-
+  document.getElementById('bgBtn').addEventListener('click', () => {
+    toggled = !toggled;
+    document.body.style.background =
+      `${toggled ? newBG : originalBG} no-repeat center center fixed`;
+    document.body.style.backgroundSize = "cover";
     updateGlow();
+  });
+</script>
 
-    document.getElementById('bgBtn').addEventListener('click', function () {
-      toggled = !toggled;
-
-      document.body.style.background =
-        `${toggled ? newBG : originalBG} no-repeat center center fixed`;
-
-      document.body.style.backgroundSize = "cover";
-
-      updateGlow();
-    });
-  </script>
 </body>
 </html>

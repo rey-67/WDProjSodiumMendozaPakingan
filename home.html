@@ -7,7 +7,7 @@
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: url('https://i.redd.it/we-transformed-the-end-into-an-overworld-village-in-v0-ef77hbv69ka91.png?width=1920&format=png&auto=webp&s=75f6fb56c30c69c9341b9c981a1e84c6ea087b1e') 
+      background: url('https://i.redd.it/we-transformed-the-end-into-an-overworld-village-in-v0-ef77hbv69ka91.png?width=1920&format=png&auto=webp&s=75f6fb56c30c69c9341b9c981a1e84c6ea087b1e')
       no-repeat center center fixed;
       background-size: cover;
       color: white;
@@ -109,6 +109,22 @@
       transform: translateY(-3px);
     }
 
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
     footer {
       display: flex;
       justify-content: space-around;
@@ -202,17 +218,20 @@
 
     <div class="right-info">
       <div class="video-box dark-card">
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/-1Sy6iz43vg" frameborder="0" allowfullscreen></iframe>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/-1Sy6iz43vg" allowfullscreen></iframe>
+        </div>
       </div>
 
       <div class="video-box dark-card">
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/vcRoRl-CQys" frameborder="0" allowfullscreen></iframe>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/vcRoRl-CQys" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
 
   <footer class="dark-card">
-
     <div class="contact-wrapper">
       CONTACT INFO
       <div class="contact-popup">
@@ -234,7 +253,6 @@
         https://www.youtube.com/watch?v=vcRoRl-CQys
       </div>
     </div>
-
   </footer>
 
   <script>
@@ -263,5 +281,6 @@
       updateGlow();
     });
   </script>
+
 </body>
 </html>
