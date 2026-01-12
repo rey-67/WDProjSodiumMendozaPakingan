@@ -17,6 +17,14 @@ The design of the page will look like the minecraft log in page and preferred di
 New webpages will have the log in details on the top to log out, switcch accounts, change  password, settings, etc. 
 It will have the same layout and design but the paragraphs will be separate pages so the video can stay by the side.
 
+## 3. Updated Wireframes
+
+<img width="1919" height="1079" alt="1" src="https://github.com/user-attachments/assets/e5d070e6-e4f9-47aa-9143-37c02305c548" />
+<img width="1919" height="1079" alt="2" src="https://github.com/user-attachments/assets/f886d962-5586-47db-8b8b-6cb62cf1d4f1" />
+<img width="1919" height="1079" alt="3" src="https://github.com/user-attachments/assets/41e0082a-646e-4dd5-8d93-866eed4ac426" />
+<img width="1919" height="1079" alt="4" src="https://github.com/user-attachments/assets/768e118a-393b-4e73-a45b-25cf9b29fa1d" />
+
+
 
 ## Description
 
