@@ -9,6 +9,13 @@
 <img width="500" height="500" alt="WEBSITE PROJECT LOGO" src="https://github.com/user-attachments/assets/9825473e-2018-4469-9f21-6bd1609f0e4b" />
 
 # UPDATED PROPOSAL
+## 1. Design and narrative of html form
+Website will use html form to collect the users info track their progress while viewing the guide and recieve additional content such as advanced tips and video guides
+The design of the page will look like the minecraft log in page and preferred difficulty/how advanced the guide will be; Creative(easy), Survival(normal amount), Hardcore(All the details).
+
+## 2. Design of the new webpage
+New webpages will have the log in details on the top to log out, switcch accounts, change  password, settings, etc. 
+It will have the same layout and design but the paragraphs will be separate pages so the video can stay by the side.
 
 
 ## Description
