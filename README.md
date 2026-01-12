@@ -8,6 +8,8 @@
 
 <img width="500" height="500" alt="WEBSITE PROJECT LOGO" src="https://github.com/user-attachments/assets/9825473e-2018-4469-9f21-6bd1609f0e4b" />
 
+# UPDATED PROPOSAL
+
 
 ## Description
 
