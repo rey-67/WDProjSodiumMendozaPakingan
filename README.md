@@ -7,8 +7,19 @@
 ## Website Logo
 
 <img width="500" height="500" alt="WEBSITE PROJECT LOGO" src="https://github.com/user-attachments/assets/9825473e-2018-4469-9f21-6bd1609f0e4b" />
+# UPDATED PROPOSAL (4th Quarter)
+## •SurviveBlocks: A Minecraft Guide
+## •This website is used to help players new and old to navigate through the game Minecraft. This guide should be helpful, easy to understand, and comprehensive making it simple to make the game easy.
+## •This project is fit for all ages for kids who want to play with their friends, up to adults who make content/also just want to try the game. This website is free and accessible for everyone who is in need of guidance in understanding and playing the game. This website will also evaluate your knowledge and understanding  of the game so people know what they need to improve on.
+## •They will love this project because all the information is up to date with us updating the website to keep up with the games updates making sure players have an easy guide to the game. 
+## •This project/features:
+Switchable day and night mode background.
+Crafting Table Simulator (To be added)
+Quiz system that will tell you your rank based on your knowledge of the game.
+Youtube videos that will help you understand the game better.
+Communities that you can join  based on your interests. For ex: Building or Speedrunning. (To be added)
 
-# UPDATED PROPOSAL
+# UPDATED PROPOSAL (3rd Quarter)
 ## 1. Design and narrative of html form
 Website will use html form to collect the users info track their progress while viewing the guide and recieve additional content such as advanced tips and video guides
 The design of the page will look like the minecraft log in page and preferred difficulty/how advanced the guide will be; Creative(easy), Survival(normal amount), Hardcore(All the details).
