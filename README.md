@@ -7,6 +7,7 @@
 ## Website Logo
 
 <img width="500" height="500" alt="WEBSITE PROJECT LOGO" src="https://github.com/user-attachments/assets/9825473e-2018-4469-9f21-6bd1609f0e4b" />
+
 # UPDATED PROPOSAL (4th Quarter)
 ## •SurviveBlocks: A Minecraft Guide
 ## •This website is used to help players new and old to navigate through the game Minecraft. This guide should be helpful, easy to understand, and comprehensive making it simple to make the game easy.
