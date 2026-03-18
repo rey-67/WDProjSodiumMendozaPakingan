@@ -67,6 +67,9 @@ SurviveBlocks is a beginner-friendly website that helps players learn how to sur
 <img width="1920" height="1080" alt="WEBSITE PROJECT WIREFRAME P6" src="https://github.com/user-attachments/assets/8465ad1c-25f7-4979-955f-3454665f205d" />
 <img width="1920" height="1080" alt="WEBSITE PROJECT WIREFRAME P7" src="https://github.com/user-attachments/assets/795b2fb5-e872-4a9c-b45a-9677a843d9fb" />
 
+Submitted by Rey Mendoza and Judah Pakingan on March 18, 2026 to sir Roy Canseco in partial fulfillment of the requirements of CS3 of DOST-PSHS-MC
+
+
 
 ## Navigation & Footer
 
