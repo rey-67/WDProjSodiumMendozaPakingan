@@ -8,7 +8,7 @@
 
 <img width="500" height="500" alt="WEBSITE PROJECT LOGO" src="https://github.com/user-attachments/assets/9825473e-2018-4469-9f21-6bd1609f0e4b" />
 
-# UPDATED PROPOSAL (4th Quarter)
+# FINAL MODIFICATION PROPOSAL (4th Quarter)
 ## •SurviveBlocks: A Minecraft Guide
 ## •This website is used to help players new and old to navigate through the game Minecraft. This guide should be helpful, easy to understand, and comprehensive making it simple to make the game easy.
 ## •This project is fit for all ages for kids who want to play with their friends, up to adults who make content/also just want to try the game. This website is free and accessible for everyone who is in need of guidance in understanding and playing the game. This website will also evaluate your knowledge and understanding  of the game so people know what they need to improve on.
